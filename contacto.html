@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Automatización de Procesos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold">AutoTech</div>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-blue-200 transition-colors">Inicio</a></li>
+                    <li><a href="tecnologias.html" class="hover:text-blue-200 transition-colors">Tecnologías</a></li>
+                    <li><a href="procesos.html" class="hover:text-blue-200 transition-colors">Procesos</a></li>
+                    <li><a href="contacto.html" class="hover:text-blue-200 transition-colors text-blue-200">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-purple-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Contacto</h1>
+            <p class="text-xl">¿Tienes preguntas sobre automatización de procesos? Contáctanos</p>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Formulario de Contacto -->
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Envíanos un mensaje</h2>
+                <form class="space-y-6">
+                    <div>
+                        <label for="nombre" class="block text-sm font-medium text-gray-700 mb-2">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label for="empresa" class="block text-sm font-medium text-gray-700 mb-2">Empresa</label>
+                        <input type="text" id="empresa" name="empresa" 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label for="asunto" class="block text-sm font-medium text-gray-700 mb-2">Asunto</label>
+                        <select id="asunto" name="asunto" required 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta-general">Consulta General</option>
+                            <option value="implementacion-rpa">Implementación RPA</option>
+                            <option value="consultoria-ia">Consultoría en IA</option>
+                            <option value="automatizacion-procesos">Automatización de Procesos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required 
+                                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                  placeholder="Cuéntanos sobre tu proyecto o consulta..."></textarea>
+                    </div>
+                    
+                    <button type="submit" 
+                            class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+
+            <!-- Información de Contacto -->
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Información de Contacto</h2>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="text-blue-600 text-xl mr-4">📧</div>
+                            <div>
+                                <h3 class="font-semibold text-gray-700">Email</h3>
+                                <p class="text-gray-600">info@autotech.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="text-green-600 text-xl mr-4">📱</div>
+                            <div>
+                                <h3 class="font-semibold text-gray-700">Teléfono</h3>
+                                <p class="text-gray-600">+51 123 456 789</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="text-purple-600 text-xl mr-4">📍</div>
+                            <div>
+                                <h3 class="font-semibold text-gray-700">Ubicación</h3>
+                                <p class="text-gray-600">Lima, Perú</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="text-orange-600 text-xl mr-4">🕒</div>
+                            <div>
+                                <h3 class="font-semibold text-gray-700">Horario de Atención</h3>
+                                <p class="text-gray-600">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Síguenos</h2>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors">
+                            <span class="text-xl">📘</span>
+                        </a>
+                        <a href="#" class="bg-blue-400 text-white p-3 rounded-lg hover:bg-blue-500 transition-colors">
+                            <span class="text-xl">🐦</span>
+                        </a>
+                        <a href="#" class="bg-blue-800 text-white p-3 rounded-lg hover:bg-blue-900 transition-colors">
+                            <span class="text-xl">💼</span>
+                        </a>
+                        <a href="#" class="bg-red-600 text-white p-3 rounded-lg hover:bg-red-700 transition-colors">
+                            <span class="text-xl">📺</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FAQ Rápido -->
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Preguntas Frecuentes</h2>
+                    <div class="space-y-4">
+                        <div class="border-b pb-4">
+                            <h3 class="font-semibold text-gray-700 mb-2">¿Cuánto tiempo toma implementar RPA?</h3>
+                            <p class="text-gray-600 text-sm">Depende de la complejidad del proceso, pero generalmente entre 2-8 semanas.</p>
+                        </div>
+                        <div class="border-b pb-4">
+                            <h3 class="font-semibold text-gray-700 mb-2">¿Qué ROI puedo esperar?</h3>
+                            <p class="text-gray-600 text-sm">La mayoría de nuestros clientes ven un ROI entre 200-400% en el primer año.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-700 mb-2">¿Ofrecen soporte continuo?</h3>
+                            <p class="text-gray-600 text-sm">Sí, ofrecemos soporte 24/7 y mantenimiento proactivo de todas nuestras soluciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Ángel Jacome Guanilo. Todos los derechos reservados.</p>
+            <p class="mt-2 text-gray-400">Sitio web sobre Automatización de Procesos y Tecnologías</p>
+        </div>
+    </footer>
+</body>
+</html>
